@@ -38,55 +38,61 @@ main {
 }
 
 @media screen and (max-width: $medida3) {
+    $medidaif: 600px;
     .header{
         max-width: 1200px;
     }
     main {
         display: flex;
-        margin: 0;
-        padding: 16px;
         justify-content: center;
         gap: 50px;
         max-width: 233px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        align-items: center;
     }
     .header_home_logo {
         width: 90px;
     }
     .header_button {
         display: flex;
+        height: 100%;
         svg {
             width: 32px;
             height: 32px;
         }
     }
     .header_nav {
-        width: 100%;
-        display: flex;
-        height: 0;
-        flex-flow: column nowrap;
+        display: none;
         overflow: hidden;
-        pointer-events: none;
-        transition: all 0.2s ease;
-        background-color: red;
         &--active {
-            height: 100%;
+            display: block;
             width: 100%;
             overflow: auto;
+            position: absolute;
+            top: 30px;
+            right: 76px;
+            background: #fff;
+            height: 400px;
+            padding: 20px;
         }
     }
-    .header_nav_list {
-        flex-direction: column;
-        hr {
-            display: flex;
-        }
-    }
-    .header_nav_list_item {
-        margin: 8px 0;
-    }
-    .header_nav_language_image {
-        display: none;
-    }
-    .header_nav_language_image--other {
+    .header_nav_list{
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        padding: 30px;
+        left: 30px;
+        gap: 30px;
+        hr{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .header_nav_list{
+        left: 50px;
     }
 }

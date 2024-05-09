@@ -10,6 +10,7 @@ export class HeaderComponent {
   public active: boolean = false
 
   setActiveNav() : void {
-    this.active = !this.active
+    console.log('setActiveNav() ejecutado');
+    this.active = !this.active;
   }
 }
