@@ -1,0 +1,56 @@
+@import "../../../assets/scss/variables";
+
+footer{
+    background-color: #9292A0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_logo{
+    width: 140px;
+}
+.footer_socialmedia{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+}
+.footer_socialmedia_icons{
+    display: flex;
+    gap: 10px;
+    img{
+        width: 40px;
+    }
+}
+
+.footer_destinations, .footer_legal, .footer_book{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.footer_destinations_list, .footer_legal_list, .footer_book_list{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    font-weight: bold;
+    a{
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+    }
+}
+
+
+//MediaQueries
+@media screen and (min-width: 900px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

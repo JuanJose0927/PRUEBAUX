@@ -1,0 +1,210 @@
+@import "../../../assets/scss/mixins/mixins", "../../../assets/scss/colors", "../../../assets/scss/variables";
+
+//Section1 take a rest
+#section1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    max-width: 1350px;
+    background-image: url("../../../assets/images/john-mcarthur-8KLLgqHMAv4-unsplash\ 2.png");
+    background-size: cover;
+}
+.take_rest {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 230px;
+    height: 100%;
+    margin-top: 70px;
+    color: $colorPrimaryText;
+    padding: 20px;
+}
+.take_rest_text {
+    p {
+        font-size: 8px;
+    }
+}
+.take_rest_button {
+    a {
+        button {
+            @include buttonPrimary;
+            &:hover{
+                background-color: #00b7d3;
+                border: 2px solid #ffff;
+                cursor: pointer;
+                transition: all .4s ease;
+                color: #ffff;
+            }
+        }
+    }
+}
+
+//Section2 Offers
+#section2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.offers_tittle{
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+}
+.offers_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.offers_cards_info {
+    height: 233px;
+    width: 248px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 20px;
+    h5 {
+        font-size: 19px;
+    }
+    p {
+        margin-bottom: 19px;
+    }
+}
+.offers_cards_info--chicago {
+    background-image: url("../../../assets/images/chicago\ 2.png");
+    background-size: cover;
+}
+.offers_cards_info--porto {
+    background-image: url("../../../assets/images/porto\ 1.png");
+    background-size: cover;
+}
+.offers_cards_info--chicago2 {
+    background-image: url("../../../assets/images/mire\ 1.png");
+    background-size: cover;
+}
+.offers_cards_info_text {
+    width: 105%;
+    height: 100%;
+    color: $colorPrimaryText;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 22px;
+    gap: 20px;
+    background-image: url("../../../assets/images/Intersect\(1\).svg");
+    opacity: 1;
+    border-bottom-left-radius: 48px;
+    border-bottom-right-radius: 20px;
+}
+
+//Section3 Destinations info
+#section3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px;
+}
+.our_destination {
+    display: flex;
+    width: 280px;
+    background: linear-gradient(180deg, #181823 39.26%, #537fe7 100%);
+    border-radius: $borderOurDestination;
+    flex-direction: column;
+    color: $colorPrimaryText;
+}
+.our_destination_image {
+    border-radius: $borderOurDestination;
+}
+.our_destination_image--other {
+    display: none;
+}
+.our_destination_info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px 70px 15px;
+    gap: 20px;
+    p,
+    span {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+//Media queries
+
+
+@media screen and (min-width: 1200px){
+    #section1{
+        padding: 20px;
+    }
+    .take_rest{
+        display: flex;
+        width: 564px;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .take_rest_text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        p{
+            font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
+        }
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .our_destination {
+        display: flex;
+        width: 800px;
+        flex-direction: row;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .our_destination_image {
+        display: none;
+    }
+    .our_destination_image--other {
+        display: flex;
+        height: 100%;
+        border-radius: 16px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #section1 {
+        min-width: 1350px;
+        min-height: 450px;
+    }
+    .offers_cards_info--porto {
+        width: 400px;
+    }
+    .offers_cards_info_text--porto{
+        width: 100%;
+        background-image: url("../../../assets/images/Intersect\(1\).svg");
+        opacity: 1;
+        border-bottom-left-radius: 48px;
+        border-bottom-right-radius: 20px;
+    }
+}

@@ -1,0 +1,27 @@
+<header class="header">
+    <main>
+        <button class="header_button" (click)="setActiveNav()">
+            <svg class="header_button_svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <a href="header_home">
+            <img src="../../../assets/images/logo 1.svg" alt="logo_airline" class="header_home_logo">
+        </a>
+        <nav class="header_nav " [ngClass]="{'header_nav--active'  :  active }">
+            <ul class="header_nav_list">
+                <li class="header_nav_list_item"><a href="#">Check In</a></li>
+                <hr>
+                <li class="header_nav_list_item"><a href="#">Manage My booking</a></li>
+                <hr>
+                <li class="header_nav_list_item"><a href="#">Information</a></li>
+            </ul>
+        </nav>
+    </main>
+    <div class="header_nav_language">
+        <img src="../../../assets/images/Group 2.png" alt="" class="header_nav_language_image">
+        <img src="../../../assets/images/language_FILL0_wght400_GRAD0_opsz48 1.png" alt="" class="header_nav_language_image header_nav_language_image--other">
+    </div>
+</header>
