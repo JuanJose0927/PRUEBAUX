@@ -3,8 +3,11 @@
     flex-wrap: wrap;
     gap: 20px;
     color: #9292a0;
-    a{
+    position: relative;
+    justify-content: flex-start;
+    top: 200px;
+    a {
         text-decoration: none;
-        color: #9292A0;
+        color: #9292a0;
     }
 }

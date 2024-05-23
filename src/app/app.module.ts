@@ -14,7 +14,7 @@ import { BreadcrumsComponent } from './shared/breadcrums/breadcrums.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    BreadcrumsComponent
+    BreadcrumsComponent,
   ],
   imports: [
     BrowserModule,

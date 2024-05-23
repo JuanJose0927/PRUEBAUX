@@ -4,20 +4,21 @@
 #section1 {
     display: flex;
     flex-direction: column;
-    min-height: 350px;
-    max-width: 1350px;
-    background-image: url("../../../assets/images/john-mcarthur-8KLLgqHMAv4-unsplash\ 2.png");
-    background-size: cover;
+    img{
+        width: 100%;
+        position: absolute;
+        min-height: 448px;
+        top: 79px;
+        right: 10px;
+    }
 }
 .take_rest {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: 230px;
+    position: relative;
     height: 100%;
     margin-top: 70px;
     color: $colorPrimaryText;
-    padding: 20px;
 }
 .take_rest_text {
     p {
@@ -46,22 +47,23 @@
     padding: 10px;
     width: 100%;
     height: 100%;
+    position: relative;
+    top: 217px;
 }
 .offers_tittle{
     display: flex;
-    align-items: center;
     margin: 20px 20px;
+    position: relative;
+    right: 12px;
 }
 .offers_cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 .offers_cards_info {
     height: 233px;
-    width: 248px;
+    width: 90%;
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
@@ -87,7 +89,7 @@
     background-size: cover;
 }
 .offers_cards_info_text {
-    width: 105%;
+    width: 100%;
     height: 100%;
     color: $colorPrimaryText;
     display: flex;
@@ -95,7 +97,7 @@
     align-items: flex-end;
     padding: 22px;
     gap: 20px;
-    background-image: url("../../../assets/images/Intersect\(1\).svg");
+    // background-image: url("../../../assets/images/Intersect\(1\).svg");
     opacity: 1;
     border-bottom-left-radius: 48px;
     border-bottom-right-radius: 20px;
@@ -108,12 +110,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px;
     margin-top: 20px;
+    position: relative;
+    top: 200px;
+    right: 6px;
 }
 .our_destination {
     display: flex;
-    width: 280px;
+    width: 300px;
     background: linear-gradient(180deg, #181823 39.26%, #537fe7 100%);
     border-radius: $borderOurDestination;
     flex-direction: column;
@@ -145,9 +149,6 @@
 
 
 @media screen and (min-width: 1200px){
-    #section1{
-        padding: 20px;
-    }
     .take_rest{
         display: flex;
         width: 564px;
@@ -193,10 +194,6 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    #section1 {
-        min-width: 1350px;
-        min-height: 450px;
-    }
     .offers_cards_info--porto {
         width: 400px;
         color: white;
