@@ -1,10 +1,10 @@
 @import "../../../assets/scss/mixins/mixins", "../../../assets/scss/colors", "../../../assets/scss/variables";
 
 //Section1 take a rest
-#section1 {
+.section1 {
     display: flex;
     flex-direction: column;
-    img{
+    img {
         width: 100%;
         position: absolute;
         min-height: 448px;
@@ -29,11 +29,11 @@
     a {
         button {
             @include buttonPrimary;
-            &:hover{
+            &:hover {
                 background-color: #00b7d3;
                 border: 2px solid #ffff;
                 cursor: pointer;
-                transition: all .4s ease;
+                transition: all 0.4s ease;
                 color: #ffff;
             }
         }
@@ -41,7 +41,7 @@
 }
 
 //Section2 Offers
-#section2 {
+.section2 {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -50,7 +50,7 @@
     position: relative;
     top: 217px;
 }
-.offers_tittle{
+.offers_tittle {
     display: flex;
     margin: 20px 20px;
     position: relative;
@@ -68,12 +68,11 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    gap: 20px;
     h5 {
         font-size: 19px;
-    }
-    p {
-        margin-bottom: 19px;
+        display: flex;
+        position: relative;
+        top: 10px;
     }
 }
 .offers_cards_info--chicago {
@@ -90,21 +89,26 @@
 }
 .offers_cards_info_text {
     width: 100%;
-    height: 100%;
+    height: 70%;
     color: $colorPrimaryText;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    padding: 22px;
-    gap: 20px;
     // background-image: url("../../../assets/images/Intersect\(1\).svg");
-    opacity: 1;
-    border-bottom-left-radius: 48px;
-    border-bottom-right-radius: 20px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    h5, p{
+        display: flex;
+        position: relative;
+        right: 30px;
+        bottom: 30px;
+    }
 }
 
 //Section3 Destinations info
-#section3 {
+.section3 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -147,35 +151,56 @@
 
 //Media queries
 
-
-@media screen and (min-width: 1200px){
-    .take_rest{
+@media screen and (min-width: 1200px) {
+    .take_rest {
         display: flex;
         width: 564px;
         padding: 30px;
         justify-content: center;
         align-items: center;
     }
-    .take_rest_text{
+    .take_rest_text {
         display: flex;
         flex-direction: column;
         gap: 20px;
         justify-content: center;
         align-items: center;
         text-align: justify;
-        p{
+        p {
             font-size: 12px;
             justify-content: center;
             align-items: center;
             margin-left: 150px;
         }
-        h1{
+        h1 {
             font-size: 40px;
         }
     }
+    .offers_cards_info--porto {
+        width: 400px;
+        color: white;
+    }
+    .offers_cards_info_text--porto {
+        background-image: none;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        width: 99%;
+        height: 80%;
+        border-top-left-radius: 100%;
+        border-bottom-left-radius: 5%;
+    }
+}
+
+@media screen and (min-width: 480px){
+    //section2
+
+
 }
 
 @media screen and (min-width: 820px) {
+
+
+
+
     .our_destination {
         display: flex;
         width: 800px;
@@ -193,18 +218,3 @@
         border-radius: 16px;
     }
 }
-@media screen and (min-width: 1200px) {
-    .offers_cards_info--porto {
-        width: 400px;
-        color: white;
-    }
-    .offers_cards_info_text--porto{
-        background-image: none;
-        background-color: rgba($color: #000000, $alpha: 0.4);
-        width: 99%;
-        height: 80%;
-        border-top-left-radius: 100%;
-        border-bottom-left-radius: 5%;
-    }
-}
-
