@@ -11,4 +11,10 @@ body{
     justify-content: center;
     align-items: center;
     right: 0;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1248px;
 }

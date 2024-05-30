@@ -34,7 +34,7 @@ footer{
 .footer_destinations, .footer_legal, .footer_book{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    position: relative;
 }
 .footer_destinations_list, .footer_legal_list, .footer_book_list{
     padding: 10px;
@@ -55,4 +55,35 @@ footer{
 
 //MediaQueries
 @media screen and (min-width: 900px) {
+    footer{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 1230px;
+        justify-content: center;
+        height: 438px;
+    }
+    .footer_content{
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        position: relative;
+    }
+    .footer_content_logo{
+        img{
+            position: relative;
+            width: 300px;
+            top: 100px;
+            left: 40px;
+        }
+    }
+    .footer_destinations, .footer_legal, .footer_book{
+        position: relative;
+        right: 10px;
+    }
+    .footer_socialmedia{
+        position: relative;
+        left: 603px;
+        top: 150px;
+    }
 }

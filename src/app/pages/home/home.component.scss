@@ -51,7 +51,7 @@
 }
 .offers_tittle {
     display: flex;
-    margin: 20px 20px;
+    margin: 15px 0;
     position: relative;
 }
 .offers_cards {
@@ -98,7 +98,8 @@
     border-top-left-radius: 100%;
     border-bottom-left-radius: 8%;
     border-bottom-right-radius: 8%;
-    h5, p{
+    h5,
+    p {
         display: flex;
         position: relative;
         right: 30px;
@@ -153,27 +154,27 @@
 @media screen and (min-width: 1200px) {
     .take_rest {
         display: flex;
-        width: 564px;
-        padding: 30px;
-        justify-content: center;
-        align-items: center;
+        width: 490px;
+        top: 60px;
     }
     .take_rest_text {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
         text-align: justify;
         p {
             font-size: 12px;
-            justify-content: center;
-            align-items: center;
-            margin-left: 150px;
         }
         h1 {
             font-size: 40px;
+            margin: 0;
         }
+    }
+    .take_rest_button {
+        position: relative;
+        top: 20px;
+    }
+    .section2 {
+        top: 176px;
     }
     .offers_cards_info--porto {
         width: 400px;
@@ -187,29 +188,26 @@
     }
 }
 
-@media screen and (min-width: 520px){
-    //section1 
-    .take_rest{
-        padding: 20px;
-    }
-    .take_rest_text{
-        p{
+@media screen and (min-width: 520px) {
+    //section1
+    .take_rest_text {
+        p {
             font-size: 15px;
         }
     }
     //section2
-    .section2{
+    .section2 {
         position: relative;
         top: 170px;
     }
-    .offers_cards{
+    .offers_cards {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         position: relative;
     }
-    .offers_cards_info{
+    .offers_cards_info {
         display: flex;
         width: 296px;
         height: 258px;
@@ -217,14 +215,13 @@
         justify-content: center;
         align-items: center;
     }
-    .offers_cards_info_text{
+    .offers_cards_info_text {
         position: relative;
         top: 38px;
     }
 }
 
 @media screen and (min-width: 820px) {
-
     .our_destination {
         display: flex;
         width: 800px;
@@ -242,11 +239,18 @@
         border-radius: 16px;
     }
 }
-@media  screen and (min-width: 1200px) {
-    .section2{
-        top: 80px;
+@media screen and (min-width: 1200px) {
+    .take_rest_button {
+        position: relative;
+        top: 20px;
     }
-    .offers_cards_info--porto{
-        width: 614px;
+    .section2 {
+        top: 210px;
+    }
+    .offers_cards_info--porto {
+        width: 500px;
+    }
+    .section3{
+        top: 220px;
     }
 }
