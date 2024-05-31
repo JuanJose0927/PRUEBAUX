@@ -62,7 +62,7 @@
 }
 .offers_cards_info {
     height: 233px;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     flex-direction: column-reverse;
@@ -114,10 +114,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     position: relative;
-    top: 200px;
-    right: 6px;
+    top: 240px;
 }
 .our_destination {
     display: flex;
@@ -186,8 +184,16 @@
         border-top-left-radius: 100%;
         border-bottom-left-radius: 5%;
     }
+    .section3{
+        margin-top: 20px;
+    }
 }
 
+@media screen and (max-width: 1200px){
+    .section2{
+        margin-top: 60px;
+    }
+}
 @media screen and (min-width: 520px) {
     //section1
     .take_rest_text {
@@ -221,7 +227,7 @@
     }
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
     .our_destination {
         display: flex;
         width: 800px;

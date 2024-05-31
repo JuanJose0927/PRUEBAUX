@@ -53,11 +53,18 @@ footer{
 }
 
 
+
 //MediaQueries
+
+@media screen and (min-width: 964px){
+    .footer{
+        top: 300px;
+    }
+}
+
 @media screen and (min-width: 900px) {
     footer{
         display: flex;
-        position: absolute;
         width: 100%;
         top: 1230px;
         justify-content: center;
@@ -83,7 +90,7 @@ footer{
     }
     .footer_socialmedia{
         position: relative;
-        left: 603px;
+        left: 315px;
         top: 150px;
     }
 }
