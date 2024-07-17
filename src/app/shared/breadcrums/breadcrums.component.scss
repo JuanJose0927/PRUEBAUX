@@ -6,21 +6,21 @@
     position: relative;
     justify-content: flex-start;
     z-index: 1;
-    top: 700px;
+    display: none;
     a {
         text-decoration: none;
         color: #9292a0;
     }
 }
 
-@media screen and (max-width: 964px){
-    .breadcrumb{
+@media screen and (max-width: 964px) {
+    .breadcrumb {
         top: 414px;
         background-color: beige;
     }
 }
-@media screen and (max-width: 800px){
-    .breadcrumb{
+@media screen and (max-width: 800px) {
+    .breadcrumb {
         top: 950px;
     }
 }
